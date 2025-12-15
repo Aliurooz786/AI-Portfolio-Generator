@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Portfolio Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <span class="badge">AI Powered</span>
+    <h1>Portfolio Builder</h1>
+    <p class="subtitle">Turn your Resume into a deployed-ready website in seconds using Gemini 2.5.</p>
+
+    <div class="upload-zone" id="dropArea">
+        <input type="file" id="resumeInput" accept=".pdf,.docx" hidden>
+        <div id="fileContent">
+            <i class="fa-solid fa-cloud-arrow-up icon-upload"></i>
+            <div class="file-info">Click or Drag Resume here</div>
+            <div class="file-hint">Supports PDF & DOCX (Max 10MB)</div>
+        </div>
+    </div>
+
+    <button id="generateBtn" class="btn-generate" onclick="generatePortfolio()">
+        <i class="fa-solid fa-wand-magic-sparkles"></i> &nbsp; Generate Website
+    </button>
+
+    <div id="loading" class="loading-container">
+        <div class="loader-bar"></div>
+        <p class="loading-text">Analyzing your career profile...</p>
+    </div>
+
+    <div id="success" class="success-msg">
+        <i class="fa-solid fa-circle-check"></i> &nbsp;
+        <strong>Success!</strong> Your portfolio ZIP is downloading.
+    </div>
+
+    <p id="error" style="color: #ef4444; margin-top: 1rem; font-size: 0.9rem;" class="hidden"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
