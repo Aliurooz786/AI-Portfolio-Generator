@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# --- Security & Secrets ---
+secret.properties
+.env
