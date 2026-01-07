@@ -93,7 +93,7 @@ async function generatePortfolio() {
     } catch (err) {
         console.error(err);
         loadingDiv.style.display = 'none';
-        errorDiv.innerText = "❌ Failed to generate. Please try again.";
+        errorDiv.innerText = "Failed to generate. Please try again.";
         errorDiv.classList.remove('hidden');
         generateBtn.innerHTML = '<i class="fa-solid fa-rotate-right"></i> &nbsp; Retry';
         generateBtn.disabled = false;
