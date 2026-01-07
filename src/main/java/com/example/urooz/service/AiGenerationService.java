@@ -66,29 +66,36 @@ public class AiGenerationService {
         codeMessages.add(SystemMessage.from("You are an expert frontend developer."));
 
         String userPromptCode = """
-             Create a portfolio website using the specification below.
-             
-             **Design Style:**
-             Use a 'Premium Dark Theme'. 
-             - Background: Deep Slate/Navy (#0f172a).
-             - Text: White/Light Grey.
-             - Accents: Use Cyan or Blue for buttons and links.
-             - Cards: Use subtle glassmorphism or dark cards with borders.
-
-             Output STRICTLY in this format:
-             --html--
-             HTML CODE
-             --html--
-             --css--
-             CSS CODE
-             --css--
-             --js--
-             JAVASCRIPT CODE
-             --js--
-
-             Specification:
-             %s
-             """;
+                 Create a portfolio website using the specification below.
+                 
+                 **Design Style:**
+                 Use a 'Premium Dark Theme'.
+                 - Background: Deep Slate/Navy (#0f172a).
+                 - Text: White/Light Grey.
+                 - Accents: Use Cyan or Blue for buttons and links.
+                 - Cards: Use subtle glassmorphism or dark cards with borders.
+            
+                 **IMPORTANT TECHNICAL REQUIREMENTS:**
+                 1. The HTML file MUST include this line in the <head> tag to link the CSS:
+                    <link rel="stylesheet" href="style.css">
+                 2. The HTML file MUST include this line at the end of the <body> tag to link the JS:
+                    <script src="script.js"></script>
+                 3. Ensure the CSS class names used in HTML match exactly with the CSS code.
+            
+                 Output STRICTLY in this format:
+                 --html--
+                 HTML CODE
+                 --html--
+                 --css--
+                 CSS CODE
+                 --css--
+                 --js--
+                 JAVASCRIPT CODE
+                 --js--
+            
+                 Specification:
+                 %s
+                 """;
         codeMessages.add(UserMessage.from(String.format(userPromptCode, websiteSpec)));
 
         Response<AiMessage> codeResponse = chatLanguageModel.generate(codeMessages);
