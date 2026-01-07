@@ -9,21 +9,21 @@
 
 ![AI Portfolio Generator Demo](path/to/demo_gif_or_screenshot.png) <!-- Replace with actual screenshot or GIF -->
 
-## 📖 About
+##  About
 
 **AI Portfolio Generator** is a powerful Full-Stack Java Spring Boot application designed to automate the creation of personal portfolio websites. By leveraging the advanced capabilities of the **Google Gemini 2.5 Flash model** (via LangChain4j), this tool intelligently analyzes your resume (PDF/DOCX) and instantly generates a fully coded, responsive, and visually stunning personal website.
 
 The generated portfolio features a high-end **"Glassmorphism" design** with Neon Aurora animations, ensuring you stand out to recruiters and clients. Secure, efficient, and blazing fast, this tool delivers a deployable ZIP file containing all necessary HTML, CSS, and JS assets in under 20 seconds.
 
-## ✨ Key Features
+##  Key Features
 
-- **🚀 AI-Powered Parsing:** Utilizes **Apache PDFBox** & **POI** to intelligently extract Name, Skills, Projects, and Experience with high accuracy.
-- **🎨 Generative UI Engine:** Automatically writes modern CSS (Glassmorphism, Hover Effects, Responsive Grid) tailored to your resume's content.
-- **🔐 Secure Architecture:** Sensitive API Keys are securely managed via `secret.properties` and are never hardcoded.
-- **📦 Monolithic Efficiency:** Deploys as a single JAR file with the frontend embedded in Spring Boot Static resources.
-- **⚡ Instant Output:** Generates a downloadable ZIP file containing your complete portfolio website in under **20 seconds**.
+- ** AI-Powered Parsing:** Utilizes **Apache PDFBox** & **POI** to intelligently extract Name, Skills, Projects, and Experience with high accuracy.
+- ** Generative UI Engine:** Automatically writes modern CSS (Glassmorphism, Hover Effects, Responsive Grid) tailored to your resume's content.
+- ** Secure Architecture:** Sensitive API Keys are securely managed via `secret.properties` and are never hardcoded.
+- ** Monolithic Efficiency:** Deploys as a single JAR file with the frontend embedded in Spring Boot Static resources.
+- ** Instant Output:** Generates a downloadable ZIP file containing your complete portfolio website in under **20 seconds**.
 
-## 🔄 Architecture Flow
+##  Architecture Flow
 
 1.  **Upload:** User uploads a Resume (PDF or DOCX) via the web interface.
 2.  **Parse:** The backend uses Apache PDFBox/POI to extract raw text and structured data.
@@ -31,7 +31,7 @@ The generated portfolio features a high-end **"Glassmorphism" design** with Neon
 4.  **Build:** The application constructs the HTML, CSS, and JS files.
 5.  **Zip Download:** The user downloads the final portfolio as a ready-to-deploy ZIP file.
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 | Component | Technology |
 | :--- | :--- |
@@ -41,7 +41,7 @@ The generated portfolio features a high-end **"Glassmorphism" design** with Neon
 | **Frontend** | HTML5, CSS3 (Advanced Animations), Vanilla JavaScript |
 | **Build Tool** | Maven |
 
-## 🚀 Getting Started
+##  Getting Started
 
 Follow these instructions to get the project up and running on your local machine.
 
@@ -98,7 +98,7 @@ AI-Portfolio-Generator/
 └── README.md                        # Project Documentation
 ```
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -108,7 +108,7 @@ Contributions are what make the open-source community such an amazing place to l
 4.  Push to the Branch (`git push origin feature/AmazingFeature`)
 5.  Open a Pull Request
 
-## 👤 Author
+##  Author
 
 **Ali Urooz**
 
